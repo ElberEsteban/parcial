@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Consulta de Clima por Ciudad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro y Consulta de Clima por Ciudad</h1>
+    <div class="container">
+        <div class="form-container">
+            <h2>Registrar Ciudad y Clima</h2>
+            <form id="climaForm">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+                <label for="clima">Clima:</label>
+                <input type="text" id="clima" name="clima" required>
+                <label for="temperatura">Temperatura:</label>
+                <input type="number" id="temperatura" name="temperatura" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="result-container">
+            <h2>Consultar Clima</h2>
+            <form id="consultaForm">
+                <label for="consultaPais">País:</label>
+                <input type="text" id="consultaPais" name="consultaPais" required>
+                <label for="consultaCiudad">Ciudad:</label>
+                <input type="text" id="consultaCiudad" name="consultaCiudad" required>
+                <button type="submit">Consultar</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
